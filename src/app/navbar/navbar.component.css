@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Roobert";
+  src: local("Roobert"),
+    url(../../assets/fonts/Roobert-Regular.woff) format("truetype");
+}
+
+@font-face {
+  font-family: "RoobertBold";
+  src: local("RoobertBold"),
+    url(../../assets/fonts/Roobert-Bold.ttf) format("truetype");
+}
+
+.navbar-custom {
+  font-family: RoobertBold;
+  color: white;
+  background-color: #212120;
+}
+
+.list {
+  font-family: Roobert;
+  color: white;
+}
+
+.active {
+  font-family: RoobertBold;
+  color: white;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.list > li {
+  color: white;
+  margin-left: 50px;
+}
+
+.download {
+  text-decoration: none;
+  border: solid 1px #d9fa3c;
+  padding: 10px;
+  color: #d9fa3c;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.download:hover {
+  text-decoration: none;
+  border: solid 1px #d9fa3c;
+  padding: 10px;
+  background-color: #d9fa3c;
+  color: #c761ff;
+  border-radius: 5px;
+  transition: 0.5s;
+}

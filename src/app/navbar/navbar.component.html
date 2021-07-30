@@ -1,11 +1,36 @@
-<ul ngbNav #nav="ngbNav" class="nav-tabs">
-    <li ngbNavItem>
-      <a ngbNavLink>First</a>
-      <ng-template ngbNavContent>First content</ng-template>
-    </li>
-    <li ngbNavItem>
-      <a ngbNavLink>Second</a>
-      <ng-template ngbNavContent>Second content</ng-template>
-    </li>
-  </ul>
-  <div [ngbNavOutlet]="nav"></div>
+<nav class="navbar navbar-expand  navbar-custom">
+    <div class="container-fluid">      
+        <span class="navbar-brand mb-0 h1 logo">
+          <img src="../../assets/KevlarDarkLogo.svg"
+          height="50"
+          >
+          Kevlar
+      </span>
+      
+    
+
+    <ul class="navbar-nav list">
+        <li class="nav-item">
+            <a class="links" routerLink="overview" routerLinkActive="active">Overview</a>
+        </li>
+        <li class="nav-item">
+            <a class="links"routerLink="documents" routerLinkActive="active">Docs</a>
+        </li>
+        <li class="nav-item">
+            <a class="links"routerLink="examples" routerLinkActive="active">Examples</a>
+        </li>
+        <li class="nav-item">
+            <a class="links"routerLink="tutorials" routerLinkActive="active">Tutorials</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="download"routerLink="download" routerLinkActive="active">Download</a>
+        </li>
+        
+        
+        
+    </ul>
+  </div>    
+  </nav>
+
+  <router-outlet></router-outlet>
