@@ -16,6 +16,17 @@
   background-color: #212120;
 }
 
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.brand {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
 .list {
   font-family: Roobert;
   color: white;
@@ -37,6 +48,7 @@
 }
 
 .download {
+  margin-left: 70px;
   text-decoration: none;
   border: solid 1px #d9fa3c;
   padding: 10px;
