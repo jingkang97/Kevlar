@@ -66,3 +66,7 @@
   border-radius: 5px;
   transition: 0.5s;
 }
+
+.navbar-toggler {
+  color: white;
+}

@@ -10,6 +10,7 @@ import { faFilm } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
   isCollapsed = false;
+  public isMenuCollapsed = true;
   constructor() { }
   
   ngOnInit(): void {
