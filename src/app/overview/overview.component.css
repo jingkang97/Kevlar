@@ -20,7 +20,7 @@
   font-family: Roobert;
   background-color: #212120;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: white;
   display: flex;
   flex-direction: row;
@@ -37,7 +37,7 @@
   left: -500px;
   padding: 50px;
   /* padding-right: 20px; */
-  padding-top: 100px;
+  padding-top: 80px;
   height: 100vh;
   display: flex;
   width: 50%;
@@ -47,6 +47,11 @@
   background-color: #212120;
   animation: slideLeft 0.5s forwards;
   animation-delay: 0;
+}
+
+.leftContainer {
+  height: 100vh;
+  width: 100%;
 }
 
 .right {
@@ -61,6 +66,11 @@
   padding-top: 70px;
   animation: slideRight 0.5s forwards;
   animation-delay: 0;
+}
+
+.rightContainer {
+  height: 100vh;
+  width: 100%;
 }
 
 .slogan {
@@ -82,6 +92,10 @@ p {
   font-family: RoobertBold;
   background-color: #c761ff;
   color: white;
+}
+
+.button:hover {
+  background-color: #844fba;
 }
 
 .version {
@@ -111,7 +125,7 @@ p {
   background-color: #844fba;
   width: 0;
   height: 2px;
-  animation: progress 8.1s ease-in-out infinite;
+  animation: progress 8s ease-in-out infinite;
 }
 .progress {
   background-color: #979797;
@@ -257,3 +271,43 @@ p {
     right: 0;
   }
 }
+
+@media screen and (max-width: 980px) {
+  .body {
+    font-family: Roobert;
+    background-color: #212120;
+    width: 100%;
+    height: 150vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .leftContainer {
+    height: 70vh;
+    width: 100%;
+  }
+  .rightContainer {
+    height: 100vh;
+    width: 100%;
+  }
+  .left {
+    padding-top: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .right {
+    height: 500px;
+    padding-top: 10px;
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+  .leftContainer {
+    background-color: pink;
+    height: 220vh;
+    padding-top: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+} */
