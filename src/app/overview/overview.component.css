@@ -217,7 +217,10 @@ p {
 }
 
 .planDemo {
+  width: 500px;
   margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 20px;
 }
 
 .planWindow {
@@ -225,8 +228,11 @@ p {
   font-family: UbuntuMono;
   padding: 30px;
   height: 400px;
+  /* width: 500px; */
   width: 500px;
   background-color: #2f3841;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .keyword {
@@ -255,9 +261,47 @@ p {
 
 .advertisment {
   /* background-color: red; */
-  height: 1000px;
+  height: 100%;
   color: white;
   /* width: 100%; */
+}
+
+.code {
+  display: flex;
+  flex-direction: row;
+}
+
+.codeDescription {
+  padding: 50px;
+  padding-left: 20px;
+  width: 50%;
+  color: white;
+}
+
+.codeHeader {
+  font-family: RoobertBold;
+  font-size: 50px;
+  color: #d9fa3c;
+}
+
+.codeDemo {
+  width: 500px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.codeWindow {
+  /* margin-top: 50px; */
+  font-family: UbuntuMono;
+  padding: 30px;
+  height: 400px;
+  /* width: 500px; */
+  width: 500px;
+  /* background-color: #2f3841; */
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 @keyframes slideLeft {
@@ -299,6 +343,50 @@ p {
     height: 500px;
     padding-top: 10px;
     width: 100%;
+  }
+  .plan {
+    display: flex;
+    flex-direction: column;
+  }
+  .planWindow {
+    width: 100%;
+  }
+  .planDemo {
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+  .videoContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .planDescription {
+    padding: 50px;
+    width: 100%;
+    color: white;
+  }
+
+  .code {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .codeWindow {
+    width: 100%;
+  }
+  .codeDemo {
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+
+  .codeDescription {
+    padding: 50px;
+    width: 100%;
+    color: white;
   }
 }
 
